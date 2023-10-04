@@ -3,18 +3,18 @@
 
 int main(int argc, char *argv[]) {
    
-   int x, y, z, m;
-   int a, b, c;
-   x = 2;
-   z = 1;
-   a = 3;
-   b = 4;
-   c = 5;
+   int x, y; 
    
-   y =  a*x*x + b*x + c;
-   m = (x + y + z) / 3;
+   printf("input two integers : \n");
+   scanf("%d", &x);
+   scanf("%d", &y);
    
-   printf("y=%d, m=%d", y, m);
+   printf("+ result is : %d \n", x+y);
+   printf("- result is : %d \n", x-y);
+   printf("* result is : %d \n", x*y);
+   printf("/ result is : %d \n", x/y);
+   printf("%% result is : %d \n", x%y);
    
    return 0;
 }
+
