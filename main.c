@@ -3,16 +3,21 @@
 
 int main(int argc, char *argv[]) {
    
-   int y;
-   int cond1, cond2;
+   unsigned int x;
+   int a;
    
-   printf("input the year : "); 
-   scanf("%d", &y);
+   printf("input a number : "); 
+   scanf("%ui", &x);
    
-   cond1 = y%4 == 0 && y%100 != 0;
-   cond2 = y%4 != 0 || y%100 == 0;
+   for (a=0; x != 0; x >>= 1)
+   {
+      if (x & 1)
+         {
+            a++;
+       }
+   }
    
-   printf("is the year %d the leap year? : %d", y, cond1); 
+   printf("The result is : %i\n", a); 
    
    return 0;
 }
